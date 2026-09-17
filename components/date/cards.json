@@ -1,22 +1,140 @@
 [
   {
+    "id": 1,
     "name": "Autotag PDF",
     "imagem": "/icons/autotag.png",
     "descricao": "adiciona automaticamente tags estruturais ao PDF, identificando títulos, parágrafos, listas e outros elementos para melhorar a acessibilidade e a organização do documento."
   },
   {
+    "id": 2,
     "name": "Comprimir PDF",
     "imagem": "/icons/comprimirPDF.png",
     "descricao": "reduza o tamanho do arquivo PDF mantendo a melhor qualidade possível, facilitando o envio, compartilhamento e armazenamento."
   },
   {
+    "id": 3,
     "name": "Criar PDF",
     "imagem": "/icons/criarPDF.png",
     "descricao": "crie documentos PDF de forma rápida e prática a partir de arquivos, imagens ou outros conteúdos."
   },
   {
+    "id": 4,
     "name": "Dividir PDF",
     "imagem": "/icons/dividirPDF.png",
     "descricao": "separe um arquivo PDF em vários documentos, extraindo páginas ou intervalos específicos de forma rápida e simples."
+  },
+  {
+    "id": 5,
+    "name": "HTML para PDF",
+    "imagem": "/icons/HTMLparaPDF.png",
+    "descricao": "converta páginas e conteúdos HTML em arquivos PDF, preservando a estrutura, o layout e a formatação."
+  },
+  {
+    "id": 6,
+    "name": "OCR PDF",
+    "imagem": "/icons/OCRpdf.png",
+    "descricao": "reconheça textos em PDFs digitalizados ou imagens, tornando o conteúdo pesquisável, selecionável e mais acessível."
+  },
+  {
+    "id": 7,
+    "name": "PDF para Imagem",
+    "imagem": "/icons/PDFparaImagem.png",
+    "descricao": "converta as páginas do seu PDF em imagens de alta qualidade, prontas para visualizar, compartilhar ou editar."
+  },
+  {
+    "id": 8,
+    "name": "PDF para WORD",
+    "imagem": "/icons/PDFparaWORD.png",
+    "descricao": "converta arquivos PDF em documentos Word editáveis, preservando textos, imagens e a formatação original."
+  },
+  {
+    "id": 9,
+    "name": "Excluir páginas PDF",
+    "imagem": "/icons/excluirPaginaPDF.png",
+    "descricao": "remova páginas indesejadas do seu PDF de forma rápida e simples, mantendo o restante do documento intacto."
+  },
+  {
+    "id": 10,
+    "name": "Extrair conteúdo PDF",
+    "imagem": "/icons/extrairConteudo.png",
+    "descricao": "extraia textos, imagens e outros elementos do seu PDF de forma rápida e organizada."
+  },
+  {
+    "id": 11,
+    "name": "Gerar documentos",
+    "imagem": "/icons/gerarDocumentos.png",
+    "descricao": "crie documentos personalizados nos formatos PDF e DOCX de forma rápida, prática e profissional."
+  },
+  {
+    "id": 12,
+    "name": "Girar PDF",
+    "imagem": "/icons/girarPDF.png",
+    "descricao": "rotacione páginas do seu PDF para a orientação desejada de forma rápida e simples."
+  },
+  {
+    "id": 13,
+    "name": "Informações PDF",
+    "imagem": "/icons/informacoesPDF.png",
+    "descricao": "visualize detalhes e propriedades do arquivo, como número de páginas, tamanho, autor, título e outras informações do documento."
+  },
+  {
+    "id": 14,
+    "name": "Inserir Páginas PDF",
+    "imagem": "/icons/inserirPaginas.png",
+    "descricao": "adicione novas páginas ao seu PDF na posição desejada de forma rápida e organizada."
+  },
+  {
+    "id": 15,
+    "name": "Juntar PDF",
+    "imagem": "/icons/juntarPDF.png",
+    "descricao": "combine vários arquivos PDF em um único documento de forma rápida, simples e organizada."
+  },
+  {
+    "id": 16,
+    "name": "Marca d'água",
+    "imagem": "/icons/marcadagua.png",
+    "descricao": "adicione textos ou imagens como marca d’água às páginas do seu PDF de forma rápida e personalizada."
+  },
+  {
+    "id": 17,
+    "name": "Organizar páginas",
+    "imagem": "/icons/organizarPaginas.png",
+    "descricao": "reordene e organize as páginas do seu PDF na sequência desejada de forma rápida e simples."
+  },
+  {
+    "id": 18,
+    "name": "Otimizar PDF",
+    "imagem": "/icons/otimizarPDF.png",
+    "descricao": "melhore o desempenho do seu PDF para carregamento e visualização mais rápidos, especialmente na web."
+  },
+  {
+    "id": 19,
+    "name": "Proteger PDF",
+    "imagem": "/icons/protegerPDF.png",
+    "descricao": "adicione senha e restrições de segurança ao seu PDF para proteger o conteúdo contra acessos não autorizados."
+  },
+  {
+    "id": 20,
+    "name": "Remover senha PDF",
+    "imagem": "/icons/removerSenha.png",
+    "descricao": "remova a proteção por senha de arquivos PDF para facilitar o acesso e o uso do documento."
+  },
+  {
+    "id": 21,
+    "name": "Selo eletrônico",
+    "imagem": "/icons/seloEletronico.png",
+    "descricao": "aplique um selo eletrônico ao PDF para identificar, autenticar e reforçar a integridade do documento."
+  },
+  {
+    "id": 22,
+    "name": "Substituir páginas PDF",
+    "imagem": "/icons/substituirPaginas.png",
+    "descricao": "substitua páginas específicas do seu PDF por novas páginas, mantendo o restante do documento intacto."
+  },
+  {
+    "id": 23,
+    "name": "Verificar Acessibilidade PDF",
+    "imagem": "/icons/verificarAcessibilidade.png",
+    "descricao": "analise o PDF para identificar problemas de acessibilidade e garantir uma melhor experiência para todos os usuários."
   }
 ]
