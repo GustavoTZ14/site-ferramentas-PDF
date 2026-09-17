@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Autotag PDF",
+    "imagem": "/icons/autotag.png",
+    "descricao": "adiciona automaticamente tags estruturais ao PDF, identificando títulos, parágrafos, listas e outros elementos para melhorar a acessibilidade e a organização do documento."
+  },
+  {
+    "name": "Comprimir PDF",
+    "imagem": "/icons/comprimirPDF.png",
+    "descricao": "reduza o tamanho do arquivo PDF mantendo a melhor qualidade possível, facilitando o envio, compartilhamento e armazenamento."
+  },
+  {
+    "name": "Criar PDF",
+    "imagem": "/icons/criarPDF.png",
+    "descricao": "crie documentos PDF de forma rápida e prática a partir de arquivos, imagens ou outros conteúdos."
+  },
+  {
+    "name": "Dividir PDF",
+    "imagem": "/icons/dividirPDF.png",
+    "descricao": "separe um arquivo PDF em vários documentos, extraindo páginas ou intervalos específicos de forma rápida e simples."
+  }
+]

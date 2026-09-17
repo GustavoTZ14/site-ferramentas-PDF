@@ -7,25 +7,24 @@ export default function Header() {
 
   return (
     <>
-      <section className="flex w-full p-2">
-        <article className="flex justify-between items-center w-full">
-          <nav className="flex items-center text-center gap-5 w-full text-xs">
-            <div className="flex items-center">
-              <FileText size={20} />
-            </div>
+      <header className="flex w-full p-5 bg-[#28323C] text-[#D9D5D3]">
+        <article className="flex justify-around items-center w-full">
+          <div className="flex items-center">
+            <FileText size={20} />
+          </div>
+          <nav className="flex items-center text-center gap-5 text-sm font-bold">
             <div>
-              <div>
-                <span>Home</span>
-              </div>
-            </div>
-            <div>
-              <div>
-                <span>Arquivos</span>
-              </div>
+              <ul className="flex gap-5">
+                <li>Inicio</li>
+                <li>Ferramentas</li>
+                <li>Dividir PDF</li>
+                <li>Unir PDF</li>
+                <li>Excluir pagina PDF</li>
+              </ul>
             </div>
           </nav>
         </article>
-      </section>
+      </header>
     </>
   )
 }
