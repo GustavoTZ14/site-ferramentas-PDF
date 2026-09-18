@@ -11,8 +11,12 @@ export default function Header() {
           <nav className="flex items-center text-center gap-5 text-sm font-bold">
             <div>
               <ul className="flex gap-5">
-                <li>Inicio</li>
-                <li>Ferramentas</li>
+                <li>
+                  <a href="/">Inicio</a>
+                </li>
+                <li>
+                  <a href="/Ferramentas">Ferramentas</a>
+                </li>
                 <li>Dividir PDF</li>
                 <li>Unir PDF</li>
                 <li>Excluir pagina PDF</li>

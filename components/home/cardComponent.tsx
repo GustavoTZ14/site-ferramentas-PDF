@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dadosCard from "@/components/date/cards.json";
+import dadosCard from "@/date/cards.json";
 
 export default function Card() {
   return (
