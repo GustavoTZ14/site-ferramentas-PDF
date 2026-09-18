@@ -1,16 +1,12 @@
-"use client";
-import { House, Folder, FileText } from "lucide-react";
-import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
-  const [openMenu, setOpenMenu] = useState(false);
-
   return (
     <>
-      <header className="flex w-full p-5 bg-[#28323C] text-[#D9D5D3]">
+      <header className="flex w-full p-5">
         <article className="flex justify-around items-center w-full">
           <div className="flex items-center">
-            <FileText size={20} />
+            <span className="text-red-500 font-bold text-xl">PDF<span className="text-gray-500 font-light">Tools</span></span>
           </div>
           <nav className="flex items-center text-center gap-5 text-sm font-bold">
             <div>

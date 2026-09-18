@@ -5,7 +5,7 @@ export default function Main() {
     <>
       <section className="grid w-full h-screen p-15">
         <article className="w-full">
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-5 gap-5">
             <Card />
           </div>
         </article>
