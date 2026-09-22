@@ -19,7 +19,7 @@ export default function Tools() {
       <section className="flex justify-center items-center w-full p-15">
         <article className="text-center">
           <h1 className="text-4xl font-bold mb-5">Todas as Ferramentas para <br /><span className="text-red-500">PDF</span>, Imagens, áudios e vídeos</h1>
-          <p className="text-sm text-gray-500 w-200">
+          <p className="text-base text-gray-500 w-200">
             Encontre todas as ferramentas que você precisa em um só lugar. Converta, edite, comprima e organize arquivos PDF, transforme e otimize imagens, converta áudios e processe vídeos de forma rápida e prática. Ferramentas online desenvolvidas para simplificar suas tarefas do dia a dia.
           </p>
         </article>
@@ -36,18 +36,20 @@ export default function Tools() {
           </div>
         </aside>
         <article className="grid grid-cols-5 gap-5">
-          {filtradas.map(({ id, name, imagem, descricao }) => (
-            <div key={id} className="grid h-50 bg-gray-500/20 outline-1 outline-gray-300 inset-shadow-xs p-4">
-              <div className="relative w-20 h-20">
-                <Image src={imagem} alt="autotag" fill className="object-cover" />
+          {filtradas.map(({ id, name, imagem, descricao, href }) => (
+            <a href={href}>
+              <div key={id} className="grid h-50 bg-gray-500/20 outline-1 outline-gray-300 inset-shadow-xs p-4">
+                <div className="relative w-20 h-20">
+                  <Image src={imagem} alt="autotag" fill className="object-cover" />
+                </div>
+                <div className="w-full h-full text-base font-bold">
+                  <h3>{name}</h3>
+                </div>
+                <div className="font-sans text-sm">
+                  <p className="line-clamp-2">{descricao}</p>
+                </div>
               </div>
-              <div className="w-full h-full text-base font-bold">
-                <h3>{name}</h3>
-              </div>
-              <div className="font-sans text-sm">
-                <p className="line-clamp-2">{descricao}</p>
-              </div>
-            </div>
+            </a>
           ))}
         </article>
       </section>
