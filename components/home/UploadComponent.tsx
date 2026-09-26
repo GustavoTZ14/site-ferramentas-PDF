@@ -11,10 +11,14 @@ export default function Hero() {
     );
   }
 
+  function excluirTudo() {
+    setArquivo([]);
+  }
+
   return (
     <section className="p-15 w-full">
       <article className="grid grid-cols-1 gap-2 p-2 w-300 m-auto">
-        <div className="p-2 h-50 flex flex-col justify-center items-center">
+        <div className="p-2 h-50 flex gap-2 justify-center items-center">
           <label htmlFor="file" className="cursor-pointer bg-red-500 text-white p-3 font-bold">
             Selecionar Arquivos
           </label>
@@ -23,10 +27,13 @@ export default function Hero() {
             const pdfs = files.filter((file) => file.type === "application/pdf")
             setArquivo((atuais) => [...pdfs, ...atuais])
           }} />
+          <div className="cursor-pointer bg-red-500 text-white p-3 font-bold" onClick={excluirTudo}>
+            <span>Excluir tudo</span>
+          </div>
         </div>
         <div className="grid grid-cols-5 gap-2 p-2">
           {arquivo.map((file, index) => (
-            <div key={index} className="grid grid-cols-1 items-center text-center p-2 min-h-10 bg-gray-400/30 outline-1 outline-gray-300 h-60 shadow-md">
+            <div key={index} className="grid grid-cols-1 items-center text-center p-2 min-h-10 bg-gray-400/30 outline-1 outline-gray-300 h-60 shadow-md cursor-pointer select-none">
               <div className="flex justify-center items-start w-full h-full">
                 <h1 className="truncate text-xs" title={file.name}>
                   {file.name.split(".")[0]}
