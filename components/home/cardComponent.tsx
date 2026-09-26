@@ -7,7 +7,7 @@ export default function Card() {
     <>
       {dadosCard.map(({ id, name, imagem, descricao, href }) => (
         <Link key={id} href={href}>
-          <div className="grid h-50 bg-white/20 outline-1 outline-gray-300 shadow-sm p-4">
+          <div className="grid h-50 bg-white/20 outline-1 outline-gray-300 shadow-md p-4">
             <div className="relative w-15 h-15">
               <Image src={imagem} alt="autotag" fill className="object-cover" />
             </div>

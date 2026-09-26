@@ -2,6 +2,7 @@
 import dateCard from "@/date/cards.json";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Tools() {
   const [categoria, setCategoria] = useState("todos");
@@ -37,8 +38,8 @@ export default function Tools() {
         </aside>
         <article className="grid grid-cols-5 gap-5">
           {filtradas.map(({ id, name, imagem, descricao, href }) => (
-            <a href={href}>
-              <div key={id} className="grid h-50 bg-gray-500/20 outline-1 outline-gray-300 inset-shadow-xs p-4">
+            <Link key={id} href={href}>
+              <div className="grid h-50 bg-white/20 outline-1 outline-gray-300 shadow-md p-4">
                 <div className="relative w-20 h-20">
                   <Image src={imagem} alt="autotag" fill className="object-cover" />
                 </div>
@@ -49,7 +50,7 @@ export default function Tools() {
                   <p className="line-clamp-2">{descricao}</p>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </article>
       </section>
