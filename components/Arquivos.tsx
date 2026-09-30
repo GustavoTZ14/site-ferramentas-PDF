@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Trash } from 'lucide-react';
 
 interface Props {
@@ -32,8 +32,7 @@ export default function Arquivos({ arquivo, setArquivo }: Props) {
     );
   }
 
-  async function uploadButton() {
-
+  async function buttonPost() {
     const formData = new FormData();
 
     arquivo.forEach((item) => {
@@ -46,7 +45,10 @@ export default function Arquivos({ arquivo, setArquivo }: Props) {
     })
   }
 
-  setTimeout(uploadButton, 3000);
+  useEffect(() => {
+    buttonPost()
+  }, [arquivo])
+
 
   return (
     <>

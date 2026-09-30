@@ -10,7 +10,11 @@ import {
 } from "@adobe/pdfservices-node-sdk";
 import fs from "fs";
 
-export default async function Autotag({ caminho }: { caminho: string }) {
+export async function POST(request: Request) {
+  const body = await request.json();
+
+  const caminho: string = body.caminho;
+
   let readStream;
 
   try {

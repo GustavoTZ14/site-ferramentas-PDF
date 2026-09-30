@@ -12,6 +12,7 @@ export async function POST(request: Request) {
 
     const caminho = path.join(
       process.cwd(),
+      "app",
       "upload",
       file.name
     );
