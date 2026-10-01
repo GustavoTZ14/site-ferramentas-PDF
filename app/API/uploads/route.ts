@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const formData = await request.formData();
   const arquivos = formData.getAll("file") as File[];
 
-  for (let file of arquivos) {
+  for (const file of arquivos) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 

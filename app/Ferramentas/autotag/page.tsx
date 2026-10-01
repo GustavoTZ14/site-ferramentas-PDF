@@ -7,7 +7,8 @@ export default function Hero() {
   const [arquivo, setArquivo] = useState<File[]>([]);
 
   async function Autotag() {
-    const caminho = "../../upload/combineFileWithPageRangeInput1.pdf";
+    const caminho = '/home/gustavotz/Repositorios/site-ferramentas-PDF/upload/accessibilityCheckerInput.pdf'
+
     const response = await fetch("/API/autotag", {
       method: "POST",
       headers: {

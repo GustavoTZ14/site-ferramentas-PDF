@@ -9,6 +9,7 @@ import {
   ServiceApiError
 } from "@adobe/pdfservices-node-sdk";
 import fs from "fs";
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -44,6 +45,8 @@ export async function POST(request: Request) {
 
     const outputStream = fs.createWriteStream('arquivoPDF.pdf');
     streamAsset.readStream.pipe(outputStream);
+
+    return NextResponse.json(outputStream)
   }
   catch (err) {
     if (err instanceof SDKError || err instanceof ServiceUsageError || err instanceof ServiceApiError) {
