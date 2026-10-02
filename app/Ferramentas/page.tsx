@@ -29,9 +29,9 @@ export default function Tools() {
         <aside className="p-5">
           <div className="flex justify-center items-center">
             <ul className="flex gap-5">
-              <li className="bg-gray-700/30 text-gray-500 font-bold text-sm p-2 cursor-pointer" onClick={() => setCategoria("todos")}>Todas as ferramentas</li>
+              <li className="bg-red-700 text-white font-bold text-sm p-2 cursor-pointer rounded-md" onClick={() => setCategoria("todos")}>Todas as ferramentas</li>
               {categorias.map((item) => (
-                <li className="bg-gray-700/30 text-gray-500 font-bold text-sm p-2 cursor-pointer" key={item} onClick={() => setCategoria(`${item}`)}>{item}</li>
+                <li className="bg-red-700 text-white font-bold text-sm p-2 cursor-pointer rounded-md" key={item} onClick={() => setCategoria(`${item}`)}>{item}</li>
               ))}
             </ul>
           </div>
@@ -39,9 +39,9 @@ export default function Tools() {
         <article className="grid grid-cols-5 gap-5">
           {filtradas.map(({ id, name, imagem, descricao, href }) => (
             <Link key={id} href={href}>
-              <div className="grid h-50 bg-white/20 outline-1 outline-gray-300 shadow-md p-4">
+              <div className="grid h-50 bg-white/20 outline-1 outline-gray-300 shadow-md p-4 rounded-md">
                 <div className="relative w-20 h-20">
-                  <Image src={imagem} alt="autotag" fill className="object-cover" />
+                  <Image src={imagem} alt="autotag" fill className="object-cover rounded-md" />
                 </div>
                 <div className="w-full h-full text-base font-bold">
                   <h3>{name}</h3>

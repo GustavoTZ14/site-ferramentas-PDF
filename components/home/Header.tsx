@@ -6,7 +6,7 @@ export default function Header() {
     <header className="flex w-full p-5">
       <article className="flex justify-around items-center w-full">
         <div className="flex items-center">
-          <span className="text-red-500 font-bold text-xl">PDF<span className="text-gray-500 font-light">Tools</span></span>
+          <span className="text-red-700 font-bold text-xl">PDF<span className="text-gray-500 font-light">Tools</span></span>
         </div>
         <nav className="flex items-center text-center gap-5 text-sm font-bold">
           <div>
@@ -26,12 +26,12 @@ export default function Header() {
         <div className="flex items-center gap-5">
           <div>
             <div>
-              <Search size={20}/>
+              <Search size={20} />
             </div>
           </div>
           <div>
             <div>
-              <User size={20}/>
+              <User size={20} />
             </div>
           </div>
         </div>
