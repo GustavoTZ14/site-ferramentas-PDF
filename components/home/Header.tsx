@@ -1,7 +1,20 @@
+"use client";
 import { User, Search } from 'lucide-react';
 import Link from "next/link";
+import { authClient } from '@/app/lib/auth-client';
+import { redirect } from 'next/navigation';
 
 export default function Header() {
+  const { data: session } = authClient.useSession();
+
+  function secao(){
+    if(!session){
+      redirect('/sign-in')
+    }
+
+    return redirect('/dashboard')
+  }
+
   return (
     <header className="flex w-full p-5">
       <article className="flex justify-around items-center w-full">
@@ -30,7 +43,7 @@ export default function Header() {
             </div>
           </div>
           <div>
-            <div>
+            <div onClick={secao} className='cursor-pointer'>
               <User size={20} />
             </div>
           </div>
